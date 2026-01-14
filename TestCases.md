@@ -1,4 +1,3 @@
-# Test Cases - App Chấm Công
 
 | ID | Test Case | Description | Pre-condition | Steps | Expected Result | Status |
 |----|-----------|-------------|---------------|-------|-----------------|--------|
