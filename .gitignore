@@ -1,0 +1,37 @@
+# General
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+# Flutter
+app-main/build/
+app-main/.dart_tool/
+app-main/.flutter-plugins
+app-main/.flutter-plugins-dependencies
+app-main/.pub-cache/
+app-main/.pub/
+
+# Android
+app-main/android/.gradle
+app-main/android/local.properties
+app-main/android/captures/
+app-main/android/gradlew
+app-main/android/gradlew.bat
+
+# Laravel
+api-main/vendor/
+api-main/node_modules/
+api-main/public/hot
+api-main/public/storage
+api-main/storage/*.key
+api-main/.env
+api-main/.phpunit.result.cache
+api-main/Homestead.json
+api-main/Homestead.yaml
+api-main/npm-debug.log
+api-main/yarn-error.log
+
+# Word/PPT (keep these, but ignore temp files starting with ~$)
+~$*.doc*
+~$*.ppt*

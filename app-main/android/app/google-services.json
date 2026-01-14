@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "810901842368",
+    "project_id": "chamcong-1143a",
+    "storage_bucket": "chamcong-1143a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810901842368:android:9293b9140653a3ad500025",
+        "android_client_info": {
+          "package_name": "com.example.app_work_log"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChFDvv2CO1x2qjKFv2jhJ7OXB9qwIV9XE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,68 @@
+import 'package:app_work_log/common/widgets/base_text.dart';
+import 'package:flutter/material.dart';
+
+class ItemOptionAccount extends StatelessWidget {
+  final Widget img;
+  final String name;
+  final Color? textColor;
+  final VoidCallback clickItem;
+  const ItemOptionAccount({
+    super.key,
+    required this.img,
+    required this.name,
+    required this.clickItem,
+    this.textColor,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: clickItem,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+        decoration: BoxDecoration(
+            border: Border(
+                bottom: BorderSide(
+                    color: Colors.grey.withAlpha(
+          (0.3 * 255).round(),
+        )))),
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Expanded(
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      SizedBox(
+                        height: 20,
+                        width: 20,
+                        child: img,
+                      ),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                        child: BaseText(
+                          text: name,
+                          colorText: textColor,
+                          size: 13,
+                          centerText: TextAlign.start,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const Icon(
+                  Icons.arrow_forward_ios,
+                  size: 13,
+                  color: Colors.grey,
+                ),
+              ],
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
